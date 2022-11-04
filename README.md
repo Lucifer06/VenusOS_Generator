@@ -6,4 +6,6 @@ To know that the generator is running, a simple contact that needs to be closed.
 
 The Node-RED flow is then calling the bash that issue the write dbus command.
 
+Both VRM portal and Venus Display are now correctly displaying the AC source.
+
 That simple.

@@ -1,4 +1,9 @@
-With a simple setup where the Generator is not managed by Venus OS, I found annoying to see the main screen interface still displaying the AC source coming from the grid while in fact the AC source is coming from the Generator I started manually.
+With a simple setup where the Generator is not managed by Venus OS, and when using a MultiPlus with only 1x AC input, I found annoying to see the main screen interface still displaying the AC source coming from the grid while in fact the AC source is coming from the Generator I started manually.
+
+I thought that adding a Digital Multi Control GX panel would solve the problem, as it effectively knows the generator is running if we close the contact of it's connector on the back of the board, but long story short: it doesn't solve the display issue :-(
+
+
+So here we are with my solution:
 
 The solution is essentially using Node-RED to read a Digital input to know if the generator is running and then to write to the dbus interface the AC source.
 
